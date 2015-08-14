@@ -1,0 +1,13 @@
+﻿@model DropdownDemo_BareBones.Models.TestModel
+
+@{
+    ViewBag.Title = "My View";
+}
+
+<h2>MyView</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.DropDownListFor(model => model.Gender, Model.GenderList)
+    </div>
+}

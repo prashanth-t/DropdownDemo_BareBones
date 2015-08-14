@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>           
+        </div>
+    </section>
+}
+<hr />
+<ol class="round">
+    <li class="one">
+        <h2 style="color:red">Dropdown Demo</h2>
+        Click below link to view the dropdown with 'Female' option selected.
+        <br />
+        @Html.ActionLink("Browse to MyView", "MyView")
+    </li>
+</ol>
+    
